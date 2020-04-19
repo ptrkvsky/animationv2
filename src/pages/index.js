@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react'
 import { Expo, Power2, TimelineMax, TweenMax } from 'gsap'
-import { ScrollMagic } from 'ScrollMagic'
 import BigNav from '../components/BigNav'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -12,7 +11,6 @@ const IndexPage = () => {
   let refDick = useRef(null)
 
   const tl = useRef(null)
-  tl.current = new TimelineMax()
 
   useEffect(() => {
     tl.current
