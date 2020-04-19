@@ -24,6 +24,8 @@ const BigNavContainer = styled('nav')`
       }
       a {
         position: relative;
+        display: inline-block;
+        max-width: 960px;
         color: ${theme.colors.primary};
         -webkit-text-stroke: 2px ${theme.colors.primary};
         text-decoration: none;
@@ -32,7 +34,7 @@ const BigNavContainer = styled('nav')`
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
-        font-size: 9.6vw;
+        font-size: 5.7vw;
         letter-spacing: 0.02em;
         line-height: 0.9em;
         transition: color 0.5s, opacity 0.5s;
