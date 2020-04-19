@@ -6,22 +6,22 @@ import SEO from '../components/seo'
 import { Logo } from '../styles/components/logo'
 
 const IndexPage = () => {
-  let refDraw = useRef(null)
-  let refMe = useRef(null)
-  let refDick = useRef(null)
+  const refDraw = useRef(null)
+  const refMe = useRef(null)
+  const refDick = useRef(null)
 
   const tl = useRef(null)
-
+  tl.current = new TimelineMax()
   useEffect(() => {
     tl.current
-      .from(refDraw, 0.5, {
+      .from(refDraw.current, 0.5, {
         delay: 3.0,
         yPercent: 110,
         opacity: 0,
         ease: Power2.easeInOut,
       })
       .from(
-        refMe,
+        refMe.current,
         0.5,
         {
           yPercent: 110,
@@ -31,7 +31,7 @@ const IndexPage = () => {
         '-=0.2'
       )
       .from(
-        refDick,
+        refDick.current,
         0.5,
         {
           yPercent: 110,
@@ -48,17 +48,17 @@ const IndexPage = () => {
       <BigNav />
       <Logo className="logoContainer">
         <span className="hide-text">
-          <span className="test d-block" ref={el => (refDraw = el)}>
+          <span className="test d-block" ref={refDraw}>
             DRAW
           </span>
         </span>
         <span className="hide-text">
-          <span className="d-block" ref={el => (refMe = el)}>
+          <span className="d-block" ref={refMe}>
             ME A
           </span>
         </span>
         <span className="hide-text">
-          <span className="d-block" ref={el => (refDick = el)}>
+          <span className="d-block" ref={refDick}>
             DICK
           </span>
         </span>
