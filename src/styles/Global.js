@@ -143,7 +143,34 @@ export default function GlobalStyle() {
         /* ------------- */
         /* STYLES GLOBAL */
         /* ------------- */
-
+        @font-face {
+          font-family: 'Druk Wide Web Bold';
+          src: url('//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.eot');
+          src: url('//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.eot?#iefix')
+              format('embedded-opentype'),
+            url('//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.woff2')
+              format('woff2'),
+            url('//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.woff')
+              format('woff'),
+            url('//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.ttf')
+              format('truetype'),
+            url('//db.onlinewebfonts.com/t/29800a9e7d146302b8ed9ad2f848db63.svg#Druk Wide Web Bold')
+              format('svg');
+        }
+        @font-face {
+          font-family: 'Druk Wide Web Medium';
+          src: url('//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.eot');
+          src: url('//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.eot?#iefix')
+              format('embedded-opentype'),
+            url('//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.woff2')
+              format('woff2'),
+            url('//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.woff')
+              format('woff'),
+            url('//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.ttf')
+              format('truetype'),
+            url('//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.svg#Druk Wide Web Medium')
+              format('svg');
+        }
         body {
           background: ${theme.bg.main};
           color: ${theme.colors.main};
@@ -167,6 +194,20 @@ export default function GlobalStyle() {
           max-width: 100%;
           margin-left: auto;
           margin-right: auto;
+        }
+
+        .v-hidden {
+          visibility: hidden;
+        }
+
+        .hide-text {
+          position: relative;
+          display: block;
+          overflow: hidden;
+        }
+
+        .d-block {
+          display: block;
         }
       `}
     />

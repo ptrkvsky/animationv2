@@ -1,16 +1,16 @@
 const theme = {
   colors: {
-    main: '#0c0c0c',
-    primary: '#230066',
+    main: '#f2f2f2',
+    primary: '#01ff5c',
     separator: '#d5dae3',
     lilac: '#8024ff',
   },
   bg: {
-    main: '#FFF',
+    main: '#4801ff',
   },
   fonts: {
-    primary: "'Open Sans', serif",
-    title: "'Ubuntu', serif",
+    primary: "'Druk Wide Web Medium', serif",
+    title: "'Druk Wide Web Bold', serif",
   },
   fontSize: {
     button: '16px',
