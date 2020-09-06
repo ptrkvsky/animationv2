@@ -5,7 +5,7 @@ const Logo = styled('div')`
   position: fixed;
   bottom: 45px;
   color: white;
-  font-size: 55px;
+  font-size: 40px;
   z-index: 180;
 
   font-family: ${theme.fonts.primary};

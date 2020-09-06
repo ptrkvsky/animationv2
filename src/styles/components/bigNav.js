@@ -25,7 +25,7 @@ const BigNavContainer = styled('nav')`
       a {
         position: relative;
         display: inline-block;
-        max-width: 960px;
+        max-width: 1080px;
         color: ${theme.colors.primary};
         -webkit-text-stroke: 2px ${theme.colors.primary};
         text-decoration: none;
@@ -34,7 +34,7 @@ const BigNavContainer = styled('nav')`
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
-        font-size: 5.7vw;
+        font-size: 7.7vw;
         letter-spacing: 0.02em;
         line-height: 0.9em;
         transition: color 0.5s, opacity 0.5s;
@@ -49,5 +49,26 @@ const ProjectContainer = styled('div')`
   will-change: transform;
   transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 `
+const ImageFixed = styled('div')`
+  position: fixed;
+  max-width: 50vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+`
 
-export { BigNavContainer, ProjectContainer }
+const ImageContainer = styled('div')`
+  overflow: hidden;
+  position: relative;
+  font-size: 0;
+  line-height: 1;
+  .cover-image {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: ${theme.bg.main};
+  }
+`
+
+export { BigNavContainer, ProjectContainer, ImageContainer, ImageFixed }

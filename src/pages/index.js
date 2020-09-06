@@ -15,10 +15,6 @@ const IndexPage = () => {
   const tl = useRef(null)
   tl.current = new TimelineMax()
   useEffect(() => {
-    Scrollbar.init(document.body, {
-      damping: 0.2,
-    })
-
     tl.current
       .to(refContainer.current, 0.5, { visibility: 'visible' })
       .from(refDraw.current, 0.5, {
@@ -57,17 +53,17 @@ const IndexPage = () => {
         <Logo className="logoContainer">
           <span className="hide-text">
             <span className="test d-block" ref={refDraw}>
-              DRAW
+              KOVSKY
             </span>
           </span>
           <span className="hide-text">
             <span className="d-block" ref={refMe}>
-              ME A
+              DESIGN
             </span>
           </span>
           <span className="hide-text">
             <span className="d-block" ref={refDick}>
-              DICK
+              STUDIO
             </span>
           </span>
         </Logo>
